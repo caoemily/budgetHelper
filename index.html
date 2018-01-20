@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Monthly Budget</title>
+</head>
+
+<body>
+    <div class="text-center top">
+        <div class="budget">
+            <div class="budget_title">
+                <h4>Available Budget in <span class="month_year">%Month%</span></h4>
+            </div>
+            <div class="budget_value">0</div>
+        </div>
+
+        <div class="text-center budget_income">
+            <div class="budget_income_text">INCOME</div>
+            <div class="budget_income_right">
+                <div class="budget_income_value">0</div>
+                <div class="budget_income_percentage">&nbsp;</div>
+            </div>
+        </div>
+        <div class="text-center budget_expense">
+            <div class="budget_expense_text">EXPENSE</div>
+            <div class="budget_expense_right">
+                <div class="budget_expense_value">0</div>
+                <div class="budget_expense_percentage">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="text-center add_item">
+            <select class="add_type red_focus">
+                <option value="inc" selected>+</option>
+                <option value="exp" selected>-</option>
+            </select>
+            <input type="text" class="add_description red_focus" placeholder="Add description">
+            <input type="text" class="add_value red_focus" placeholder="Value">
+            <button class="btn btn-default add_btn red_btn">OK</button>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="income">
+            <h4 class="income_title">INCOME</h4>
+            <div class="income_list"></div>
+        </div>
+        <div class="expense">
+            <h4 class="expense_title">EXPENSE</h4>
+            <div class="expense_list"></div>
+        </div>    
+    </div>
+    <script src="app.js"></script>
+
+    </body>
+</html>
